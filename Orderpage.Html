@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order - Ann's Bakery</title>
+</head>
+
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header>
+        <h1>Ann's Bakery</h1>
+        <p>Freshly Baked with Passion</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="enquiry.html">Place an Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <section>
+            <h2>Place Your Order</h2>
+            <p>
+                Fill in the form below to place your order. Ann will confirm 
+                your order and provide a pickup date and time. 
+                <strong>Please note:</strong> All orders are for pickup only.
+            </p>
+            <p>
+                <strong>Important:</strong> Please allow the following 
+                turnaround times:
+            </p>
+            <ul>
+                <li><strong>Scones:</strong> 24 – 48 hours</li>
+                <li><strong>Birthday Cakes:</strong> 3 – 5 days</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Order Form -->
+        <section>
+            <h3>Order Form</h3>
+
+            <form action="#" method="post">
+
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" 
+                           placeholder="e.g. Thabo Mokoena" required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="e.g. thabo@gmail.com" required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           placeholder="e.g. 082 123 4567" required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Order Details -->
+                <fieldset>
+                    <legend>Order Details</legend>
+
+                    <p>
+                        <strong>Product Selection:</strong> 
+                        (Select all that apply)
+                    </p>
+
+                    <input type="checkbox" id="sconeClassic" 
+                           name="productScone" value="Classic Buttermilk">
+                    <label for="sconeClassic">Scone – Classic Buttermilk (R15.00 each)</label>
+                    <br>
+
+                    <input type="checkbox" id="sconeBlueberry" 
+                           name="productScone" value="Blueberry">
+                    <label for="sconeBlueberry">Scone – Blueberry (R18.00 each)</label>
+                    <br>
+
+                    <input type="checkbox" id="cakeStandard" 
+                           name="productCake" value="Standard Birthday Cake">
+                    <label for="cakeStandard">Birthday Cake – Standard (From R250.00)</label>
+                    <br>
+
+                    <input type="checkbox" id="cakePremium" 
+                           name="productCake" value="Premium Design Cake">
+                    <label for="cakePremium">Birthday Cake – Premium Design (From R400.00)</label>
+                    <br><br>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" 
+                           min="1" placeholder="e.g. 6">
+                    <br><br>
+
+                    <label for="cakeDetails">Cake Design Details (if applicable):</label>
+                    <br>
+                    <textarea id="cakeDetails" name="cakeDetails" 
+                              rows="4" cols="50" 
+                              placeholder="e.g. Theme, colours, age, name for the cake, or any special requests..."></textarea>
+                    <br><br>
+
+                    <label for="pickupDate">Preferred Pickup Date:</label>
+                    <input type="date" id="pickupDate" name="pickupDate">
+                    <br><br>
+
+                    <label for="pickupTime">Preferred Pickup Time:</label>
+                    <input type="time" id="pickupTime" name="pickupTime">
+                    <br><br>
+
+                    <label for="specialRequests">Special Requests or Dietary Requirements:</label>
+                    <br>
+                    <textarea id="specialRequests" name="specialRequests" 
+                              rows="3" cols="50" 
+                              placeholder="e.g. Allergies, extra decorations, etc."></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Payment Method -->
+                <fieldset>
+                    <legend>Payment Method</legend>
+
+                    <p>Please select your preferred payment method:</p>
+
+                    <input type="radio" id="paymentCard" name="payment" value="Card" checked>
+                    <label for="paymentCard">Card</label>
+                    <br>
+
+                    <input type="radio" id="paymentCash" name="payment" value="Cash">
+                    <label for="paymentCash">Cash</label>
+                    <br><br>
+
+                    <p>
+                        <strong>Note:</strong> Payment is made upon pickup 
+                        at 6575 Majola Street, New Payneville, Springs.
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Order">
+
+                <br><br>
+
+                <p>
+                    <strong>Important:</strong> By submitting this form, 
+                    you agree to our pickup-only policy and understand 
+                    that estimated turnaround times apply.
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Order Summary / Contact -->
+        <section>
+            <h3>Need Help?</h3>
+            <p>
+                If you have any questions about your order, please 
+                <a href="contact.html">contact Ann directly</a>.
+            </p>
+            <p>
+                <strong>Phone:</strong>  081 564 3358
+                <br>
+                <strong>Email:</strong> info@annsbakery.co.za
+            </p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>
+            &copy; 2026 Ann's Bakery. All rights reserved.
+        </p>
+        <p>
+            <strong>Address:</strong> 6575 Majola Street, New Payneville, 
+            Springs, 1575
+        </p>
+        <p>
+            <strong>Phone:</strong>  081 564 3358 &nbsp;|&nbsp; 
+            <strong>Email:</strong> info@annsbakery.co.za
+        </p>
+        <p>
+            <strong>Follow us:</strong> 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
