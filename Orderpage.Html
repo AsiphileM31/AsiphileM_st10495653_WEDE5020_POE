@@ -10,6 +10,7 @@
 
     <!-- ===== HEADER / NAVIGATION ===== -->
     <header>
+         <div class="container header-inner">
         <h1>Ann's Bakery</h1>
         <p>Freshly Baked with Passion</p>
 
@@ -22,12 +23,13 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+       </div>
     </header>
 
     <hr>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main>
+    <main class="container">
 
         <section>
             <h2>Place Your Order</h2>
@@ -36,7 +38,7 @@
                 your order and provide a pickup date and time. 
                 <strong>Please note:</strong> All orders are for pickup only.
             </p>
-            <p>
+            <p class="highlight">
                 <strong>Important:</strong> Please allow the following 
                 turnaround times:
             </p>
@@ -63,14 +65,14 @@
                            placeholder="e.g. Thabo Mokoena" required>
                     <br><br>
 
-                    <label for="email">Email Address:</label>
+                    <label for="email" class="mt-sm">Email Address:</label>
                     <input type="email" id="email" name="email" 
                            placeholder="e.g. thabo@gmail.com" required>
                     <br><br>
 
-                    <label for="phone">Phone Number:</label>
+                    <label for="phone" class="mt-sm">Phone Number:</label>
                     <input type="tel" id="phone" name="phone" 
-                           placeholder="e.g. 082 123 4567" required>
+                           placeholder="e.g. 081 564 3358" required>
                     <br><br>
                 </fieldset>
 
@@ -87,45 +89,45 @@
 
                     <input type="checkbox" id="sconeClassic" 
                            name="productScone" value="Classic Buttermilk">
-                    <label for="sconeClassic">Scone – Classic Buttermilk (R15.00 each)</label>
+                    <label for="sconeClassic" style="display:inline;">Scone – Classic Buttermilk (R15.00 each)</label>
                     <br>
 
                     <input type="checkbox" id="sconeBlueberry" 
                            name="productScone" value="Blueberry">
-                    <label for="sconeBlueberry">Scone – Blueberry (R18.00 each)</label>
+                    <label for="sconeBlueberry" style="display:inline;">Scone – Blueberry (R18.00 each)</label>
                     <br>
 
                     <input type="checkbox" id="cakeStandard" 
                            name="productCake" value="Standard Birthday Cake">
-                    <label for="cakeStandard">Birthday Cake – Standard (From R250.00)</label>
+                    <label for="cakeStandard" style="display:inline;">Birthday Cake – Standard (From R250.00)</label>
                     <br>
 
                     <input type="checkbox" id="cakePremium" 
                            name="productCake" value="Premium Design Cake">
-                    <label for="cakePremium">Birthday Cake – Premium Design (From R400.00)</label>
-                    <br><br>
+                    <label for="cakePremium" style="display:inline;">Birthday Cake – Premium Design (From R400.00)</label>
+                    <br>
 
-                    <label for="quantity">Quantity:</label>
+                    <label for="quantity" class="mt-sm">Quantity:</label>
                     <input type="number" id="quantity" name="quantity" 
                            min="1" placeholder="e.g. 6">
                     <br><br>
 
-                    <label for="cakeDetails">Cake Design Details (if applicable):</label>
+                    <label for="cakeDetails" class="mt-sm">Cake Design Details (if applicable):</label>
                     <br>
                     <textarea id="cakeDetails" name="cakeDetails" 
                               rows="4" cols="50" 
                               placeholder="e.g. Theme, colours, age, name for the cake, or any special requests..."></textarea>
-                    <br><br>
+                    <br>
 
-                    <label for="pickupDate">Preferred Pickup Date:</label>
+                    <label for="pickupDate" class="mt-sm">Preferred Pickup Date:</label>
                     <input type="date" id="pickupDate" name="pickupDate">
-                    <br><br>
+                    <br>
 
-                    <label for="pickupTime">Preferred Pickup Time:</label>
+                    <label for="pickupTime" class="mt-sm">Preferred Pickup Time:</label>
                     <input type="time" id="pickupTime" name="pickupTime">
                     <br><br>
 
-                    <label for="specialRequests">Special Requests or Dietary Requirements:</label>
+                    <label for="specialRequests" class="mt-sm">Special Requests or Dietary Requirements:</label>
                     <br>
                     <textarea id="specialRequests" name="specialRequests" 
                               rows="3" cols="50" 
@@ -142,14 +144,14 @@
                     <p>Please select your preferred payment method:</p>
 
                     <input type="radio" id="paymentCard" name="payment" value="Card" checked>
-                    <label for="paymentCard">Card</label>
+                    <label for="paymentCard" style="display:inline;">Card</label>
                     <br>
 
                     <input type="radio" id="paymentCash" name="payment" value="Cash">
-                    <label for="paymentCash">Cash</label>
+                    <label for="paymentCash" style="display:inline;">Cash</label>
                     <br><br>
 
-                    <p>
+                    <p class="highlight mt-sm">
                         <strong>Note:</strong> Payment is made upon pickup 
                         at 6575 Majola Street, New Payneville, Springs.
                     </p>
@@ -157,12 +159,13 @@
 
                 <br>
 
+            <div class="text-center">
                 <!-- Submit Button -->
                 <input type="submit" value="Submit Order">
-
+             </div>
                 <br><br>
 
-                <p>
+                <p class="mt-sm">
                     <strong>Important:</strong> By submitting this form, 
                     you agree to our pickup-only policy and understand 
                     that estimated turnaround times apply.
@@ -192,6 +195,7 @@
 
     <!-- ===== FOOTER ===== -->
     <footer>
+        <div class="container">
         <p>
             &copy; 2026 Ann's Bakery. All rights reserved.
         </p>
@@ -208,6 +212,7 @@
             <a href="#">Facebook</a> | 
             <a href="#">Instagram</a>
         </p>
+        </div>
     </footer>
 
 </body>
