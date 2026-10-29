@@ -1,2 +1,16 @@
 # AsiphileM_st10495653_WEDE5020_POE
+
+<! DOCTYPE html>
+<head lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1-0">
+    <title> Ann's Bakery</title>
+    <meta http-equiv="refresh" content="0; url=Homepage.hmtl">
+  </head>
+  <body>
+    <p> Welcome to Ann's Bakery!</p>
+    <p><a href="Homepage.html"> Click here to vist our Homepage</a></p>
+  </body>
+</head>
 Ann's Bakery
