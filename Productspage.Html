@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products - Ann's Bakery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- ===== HEADER / NAVIGATION ===== -->
     <header>
+    <div class="container">
         <h1>Ann's Bakery</h1>
         <p>Freshly Baked with Passion</p>
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Our Products</a></li>
-                <li><a href="enquiry.html">Place an Order</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="AboutUs.Html">About Us</a></li>
+                <li><a href="Productspage.Html">Our Products</a></li>
+                <li><a href="Orderpage.Html">Place an Order</a></li>
+                <li><a href="ContactUs.Html">Contact Us</a></li>
             </ul>
         </nav>
+       </div>
     </header>
 
     <hr>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main>
+    <main class="container">
 
         <section>
             <h2>Our Baked Goods</h2>
@@ -49,34 +52,72 @@
                 Light, buttery, and baked fresh daily - they are the 
                 perfect treat for any time of day.
             </p>
-
+             
             <h4>Scone Varieties</h4>
-            <ul>
-                <li>
-                    <strong>Classic Buttermilk Scones</strong> – 
-                    Traditional, light, and perfectly golden. 
-                    <br>Price: <strong>R15.00 each</strong>
-                </li>
-                <li>
-                    <strong>Blueberry Scones</strong> – 
-                    Bursting with juicy blueberries and a hint of lemon. 
-                    <br>Price: <strong>R18.00 each</strong>
-                </li>
-                <li>
-                    <strong>Special of the Week</strong> - 
-                    Ask Ann about her rotating seasonal flavours! 
-                    <br>Price: <strong>Varies</strong>
-                </li>
-            </ul>
+             
+              <div class="layout-three-column mt-md">
+                <div class="product-item">
+                  <img
+                      src="butter-milk.jpg"   
+                       srcset="butter-milk-small.jpg 300w,  
+                              butter-milk-medium.jpg 600w,
+                              image-2-large.jpg 900w"
+                       sizes="(max-width: 480px) 90vw,
+                               (max-width: 768) 45vw,
+                                 30vw"
+                       alt="Classic buttermilk scones with a golden crust, freshly baked"
+                       class="product-image"
+                        loading="lazy"
+                   >
+                    <h4>Classic Buttermilk Scones</h4>  
+                   <p> Traditional, light, and perfectly golden. A customer favourite </p>
+                   <p class="Price">R15.00 each</p>
+                   <p class="turnaround">Turnaround: 24 - 48 hours</p>
+                </div>
 
-            <p>
-                <strong>Turnaround Time:</strong> 24 - 48 hours 
-                (Orders are baked fresh, so please plan ahead!)
+                <div class="product-item">
+                 <img
+                     src="images/scone-blueberry.jpg"
+                     srcset="scone-blueberry-small.jpg 300w,
+                             scone-blueberry-medium.jpg 600w,
+                             scone-blueberry-large.jpg 900w"
+                     sizes="(max-width: 480px) 90vw,
+                             (max-width: 768px) 45vw,
+                             30vw"
+                      alt="Blueberry scones bursting with juicy berries and hint of lemon"
+                      class="product-image"
+                      loading="lazy"
+                    >
+                    <h4>Blueberry Scones</h4> – 
+                   <p> Bursting with juicy blueberries and a hint of lemon. </p>
+                   <p class="Price">R18.00 each</p>
+                   <p class="turnaround">Turnaround: 24 - 48 hours</p> 
+                </div>
+
+                <div class="product-item">
+                <img
+                    src="scone-seasonal.jpg"
+                    srcset="scone-seasonal-small.jpg 300w,
+                            scone-seasonal-medium.jpg 600w,
+                            scone-seasonal-large.jpg 900w"
+                     sizes="(max-width: 480px) 90vw,
+                            (max-width: 768px) 45pxvw,
+                        30vw"
+                     alt="Seasonal scones featuring rotating flavours"
+                     class="product-images"
+                     loading="lazy"
+                    >
+                    <h4>Seasonal Special</h4> - 
+                   <p> Ask Ann about her rotating seasonal flavours! </p>
+                    <p class="Price">Varies</p>
+                     <p class="turnaround">Turnaround: 24 - 48 hours</p>
+                </div>
+            </div>
+
+            <p class="text-center mt-md">
+                <a class="btn" href="Orderpage.html" Order Scones Now</a>
             </p>
 
-            <p>
-                <a href="enquiry.html">Order Scones Now</a>
-            </p>
         </section>
 
         <hr>
@@ -91,22 +132,50 @@
             </p>
 
             <h4>Cake Options</h4>
-            <ul>
-                <li>
-                    <strong>Standard Birthday Cake</strong> – 
-                    Classic sponge with buttercream frosting. 
-                    Custom colours and simple decorations included. 
-                    <br>Starting from: <strong>R250.00</strong>
-                </li>
-                <li>
-                    <strong>Premium Design Cake</strong> – 
-                    Multi-tier, themed designs, or character cakes. 
-                    Perfect for milestone birthdays! 
-                    <br>Starting from: <strong>R400.00</strong>
-                </li>
-            </ul>
 
-            <h4>Flavours Available</h4>
+            <div class="layout-two-column mt-md">
+                <div class="product-item">
+                   <img
+                       src="cake-standard.jpg"
+                       srcset="cake-standard-small.jpg 400w,
+                               cake-standard-medium.jpg 800w,
+                                cake-standard-large.jpg 1200w"
+                       sizes="(max-width: 480px) 90vw,
+                              (amx-width: 768px) 45vw,
+                             50vw"
+                          alt="Standard birthday cake with buttercream frosting and simple decorations"
+                          class="product-image"
+                          loading="lazy"
+                     >
+                    <h4>Standard Birthday Cake</h4>  
+                    <p>Classic sponge with buttercream frosting. 
+                    Custom colours and simple decorations included. </p>
+                    <p class="price">from R250.00</p>
+                    <p class="Turnaround"> Time: 3 - 5 days</p>
+                </div>
+
+                <div class="product-item">
+                   <img
+                       src="cake-premium-small.jpg"
+                        srcset="cake-premium-small.jpg 400w,
+                                cake-premium-medium.jpg 800w,
+                                 images-5-large.jpg 1200w"
+                       sizes="(max-width: 480px) 90vw,
+                              (max-width: 768px) 45vw,
+                             50vw"
+                        alt="Premium multi-tier birthday cake with themed design and elegant decorations"
+                        class="product-image"
+                         loading="lazy"
+                        >
+                    <h4>Premium Design Cake</h4> 
+                   <p> Multi-tier, themed designs, or character cakes. 
+                    Perfect for milestone birthdays! </p>
+                    <p class="price"> from R400.00</p>
+                   <p class="Turnaround"> Time: 3 - 5 days</p>
+                </div>
+            </div>
+
+            <h4 class="mt-md">Flavours Available</h4>
             <ul>
                 <li>Vanilla</li>
                 <li>Chocolate</li>
@@ -116,12 +185,11 @@
             </ul>
 
             <p>
-                <strong>Turnaround Time:</strong> 3 - 5 days 
                 (Custom cakes take time to design and bake to perfection.)
             </p>
 
-            <p>
-                <a href="enquiry.html">Order a Birthday Cake</a>
+            <p class="text-center mt-md">
+                <a class="btn" href="Orderpage.html">Order a Birthday Cake</a>
             </p>
         </section>
 
@@ -159,6 +227,7 @@
 
     <!-- ===== FOOTER ===== -->
     <footer>
+       <div class="contaier">
         <p>
             &copy; 2026 Ann's Bakery. All rights reserved.
         </p>
@@ -174,7 +243,8 @@
             <strong>Follow us:</strong> 
             <a href="#">Facebook</a> | 
             <a href="#">Instagram</a>
-        </p>
+        </p> 
+         </div>
     </footer>
 
 </body>
