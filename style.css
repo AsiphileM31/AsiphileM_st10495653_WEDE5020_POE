@@ -27,8 +27,8 @@
     color:inherit;
  }
 
- button,
- input,
+ button:
+ input:
  textarea,
   select {
     font:inherit
@@ -42,13 +42,13 @@
 
   :root {
     /* color Palette-Warm and Cozy*/
-   color-cream: #FDF5E6;
-   color-warm-brown: #8B6914;
-    color-terracotta: #E07A5F;
-   color-butter-yellow: #F4D03F;
-   color-dark-chocolate: #3E2723;
-   color-warm white: #FFF8F0;
-   color: light grey: #F0EAE0;
+   color-cream: FDF5E6;
+   color-warm-brown: 8B6914;
+    color-terracotta: E07A5F;
+   color-butter-yellow: F4D03F;
+   color-dark-chocolate: 3E2723;
+   color-warm-white: FFF8F0;
+   color-light-grey: F0EAE0;
   
 
 
@@ -303,7 +303,7 @@ nav ul li a:active {
  }
 
  fieldset {
-    border:2 px solid var (--color-warm-brown);
+    border:2 px solid var (-color-warm-brown);
     border-radius: var (-border-radius);
     padding: var (-space-md);
     margin-bottom: var (-space-md);
@@ -461,13 +461,13 @@ UTILITY CLASSES
 }
 
 .btn-link:focus {
-    outline: 2 px dashed var (--color-warm-brown);
+    outline: 2 px dashed var (-color-warm-brown);
     outline-offset: 3 px;
 }
 
 .btn-link:active {
     background-color: var (-color-better-yellow);
-    color: var (--color-dark-chocolate);
+    color: var (-color-dark-chocolate);
     transform: translateY (0);
 }   
 
@@ -507,8 +507,8 @@ RESPONSIVE DESIGN
 .product-image{ 
     width:100 %;
     height:atuo;
-    border-radius: var (--border-radius);
-    margin-bottom: var (--space-md);
+    border-radius: var (-border-radius);
+    margin-bottom: var (-space-md);
 }
 
 /*Picture element support*/
@@ -578,7 +578,7 @@ Breakpoints: Tablet (max-width: 768px)
 ==============================================================*/
 
 /* --------- TABLET: 768px and below----------*/
- @mediascreen and (max-width: 768 px) {
+ @ media screen and (max-width: 768 px) {
 
     h1 {font-size: 2 rem;}
     h2 {font-size: 1.6 rem;}
