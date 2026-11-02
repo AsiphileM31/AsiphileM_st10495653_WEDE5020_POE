@@ -399,6 +399,35 @@ button:active {
     transform: translateY (0);
 }
 
+/* ---------- FORM VALIDATION STYLES ---------- */
+.input-error {
+    border-color: #C0392B ! important;
+    background-color: #FDEDEC ! important;
+}
+
+.error-message {
+    color: #C0392B;
+    font-size: 0.88 rem;
+    font-weight: 600;
+    margin-top: 0.3 rem;
+    margin-bottom: var (--space-sm);
+}
+
+.form-success {
+    background-color: #E8F5E9;
+    border-left: 5 px solid #2E7D32;
+    color: #1B5E20;
+    padding: var (--space-sm) var (-space-md);
+    border-radius: var (-border-radius);
+    margin-bottom: var (-space-md);
+    animation: slideDown 0.4 s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY (-10 px); }
+    to  { opacity: 1; transform: translateY (0); }
+}
+
 
 /*=======================================================================
 FOOTER
@@ -734,7 +763,281 @@ ACCESSIBILITY AND PRINT
       font-weight:normal;
       margin-bottom: 0;
       
-     } 
+        } 
     }
+}
+
+/* ============================================================
+   INTERACTIVE ELEMENTS – ACCORDION, TABS, LIGHTBOX, ANIMATIONS
+   ============================================================ */
+
+/* ---------- ACCORDION ---------- */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var (-space-xs);
+}
+
+.accordion-item {
+    border: 2 px solid var (-color-light-grey);
+    border-radius: var (-border-radius);
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100 %;
+    background-color: var (-color-cream);
+    color: var (-color-dark-chocolate);
+    border: none;
+    padding: var (-space-sm);
+    font-size: 1 rem;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color var (-transition);
+}
+
+.accordion-header:hover {
+    background-color: var (-color-butter-yellow);
+}
+
+.accordion-header:focus {
+    outline: 2 px dashed var (-color-terracotta);
+    outline-offset: 2 px;
+}
+
+.accordion-icon {
+    font-size: 1.4 rem;
+    font-weight: 700;
+    color: var (-color-terracotta);
+    transition: transform var (-transition);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var (-color-warm-white);
+    transition: max-height 0.4 s ease, padding 0.4 s ease;
+    padding: 0 var (-space-sm);
+}
+
+.accordion-content.open {
+    max-height: 400 px;
+    padding: var (-space-sm);
+}
+
+/* ---------- TABS ---------- */
+.tabs {
+    display: flex;
+    gap: var (-space-xs);
+    border-bottom: 3 px solid var (-color-warm-brown);
+    margin-bottom: var (-space-md);
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 0.8 rem 1.5 rem;
+    font-family: var (-font-heading);
+    font-size: 1.1 rem;
+    font-weight: 700;
+    color: var (-color-warm-brown);
+    cursor: pointer;
+    border-radius: var (-border-radius) var (-border-radius) 0 0;
+    transition: all var (-transition);
+}
+
+.tab-button:hover {
+    background-color: var (-color-butter-yellow);
+}
+
+.tab-button.active {
+    background-color: var (-color-warm-brown);
+    color: var (-color-warm-white);
+}
+
+.tab-button:focus {
+    outline: 2 px dashed var (-color-terracotta);
+    outline-offset: 2 px;
+}
+
+.tab-panel {
+    display: none;
+    animation: fadeIn 0.4 s ease;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY (10 px); }
+    to   { opacity: 1; transform: translateY (0); }
+}
+
+/* ---------- LIGHTBOX ---------- */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba (62, 39, 35, 0.92);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var (--space-md);
+}
+
+.lightbox.open {
+    display: flex;
+    animation: fadeIn 0.3 s ease;
+}
+
+.lightbox-img {
+    max-width: 90 vw;
+    max-height: 80 vh;
+    border-radius: var (--border-radius);
+    box-shadow: 0 8 px 30 px rgba (0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+    color: var (-color-cream);
+    margin-top: var (-space-sm);
+    font-style: italic;
+    text-align: center;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1 rem;
+    right: 1.5 rem;
+    background: none;
+    border: none;
+    color: var (-color-cream);
+    font-size: 3 rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color var (-transition);
+}
+
+.lightbox-close:hover {
+    color: var (-color-terracotta);
+}
+
+/* Make gallery images look clickable */
+.gallery-item {
+    cursor: zoom-in;
+    transition: transform var (-transition), box-shadow var (-transition);
+}
+
+.gallery-item:hover {
+    transform: scale (1.03);
+    box-shadow: 0 8 px 20 px rgba (62, 39, 35, 0.25);
+}
+
+/* ---------- SCROLL ANIMATIONS ---------- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY (30 px);
+    transition: opacity 0.6 s ease, transform 0.6 s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY (0);
+}
+
+/* ---------- BACK TO TOP ---------- */
+.back-to-top {
+    position: fixed;
+    bottom: 1.5 rem;
+    right: 1.5 rem;
+    width: 48 px;
+    height: 48 px;
+    border-radius: 50 %;
+    background-color: var (-color-terracotta);
+    color: var (-color-warm-white);
+    font-size: 1.4 rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var (-transition);
+    z-index: 1000;
+    box-shadow: 0 4 px 12 px rgba (62, 39, 35, 0.3);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var (-color-warm-brown);
+    transform: translateY (-3 px);
+}
+
+/* ---------- MAPS ---------- */
+.map-container {
+    width: 100 %;
+    height: 300 px;
+    border-radius: var (-border-radius);
+    border: 3 px solid var (-color-warm-brown);
+    box-shadow: 0 4 px 12 px rgba (62, 39, 35, 0.15);
+    margin-top: var (-space-sm);
+}
+
+@media (max-width: 480 px) {
+    .map-container {
+        height: 220 px;
+    }
+}
+
+
+/* ---------- PRODUCT CONTROLS (SEARCH + SORT) ---------- */
+.product-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var (-space-sm);
+    background-color: var (-color-cream);
+    padding: var (-space-sm);
+    border-radius: var (-border-radius);
+    border: 2 px solid var (-color-light-grey);
+    margin-bottom: var (-space-md);
+}
+
+.product-controls label {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.product-controls input[type="search"],
+.product-controls select {
+    flex: 1 1 180 px;
+    padding: 0.5 rem 0.8 rem;
+    border: 2 px solid var (-color-light-grey);
+    border-radius: var (-border-radius);
+    background-color: var (-color-warm-white);
+    font-size: 1 rem;
+}
+
+.product-controls input:focus,
+.product-controls select:focus {
+    border-color: var (-color-terracotta);
+    outline: none;
+    box-shadow: 0 0 0 3 px rgba (224, 122, 95, 0.25);
+}
+
+.no-results {
+    text-align: center;
+    font-style: italic;
+    color: var (-color-warm-brown);
+    grid-column: 1 / -1;
+    padding: var (-space-md);
 }
  
