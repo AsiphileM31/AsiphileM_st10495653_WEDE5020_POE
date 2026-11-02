@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== SEO META TAGS ===== -->
     <title>Contact Us – Ann's Bakery</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Contact Ann's Bakery in New Paynwville, spring. View our location on the map, business hours, phones number , and send us a message">
+
+<meta name="keywords" content="contact Ann's Bakery, bakery address Springs, bakery hours New Payneville">
+
+<link rel="canonical" href="https://www.annsbakery.co.za/contact.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Contact Ann's Bakery | Location &amp; Enquiries">
+<meta property="og:description" content="Find Ann's bakery in Payneville, Springs.View our map, hours, and send a message">
+<meta property="og:image" content="https//www.annsbakery.co.za/images/hero-scones.jpg">
+<meta property="og:url" content="https://www.annsbakery.co.za/contacthtml">
+<meta property="og:type" content="website">
+<meta name="instagram.card" content="summary_large_image">
+
+<!-- Security -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referer" content="strict-origin-when-cross-origin">
+
+<!-- Leaflet CSS for interactive maps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://unpkg.com">
+
+<!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -21,7 +48,7 @@
                 <li><a href="AboutUs.Html">About Us</a></li>
                 <li><a href="Productspage.Html">Our Products</a></li>
                 <li><a href="Orderpage.Html">Place an Order</a></li>
-                <li><a href="ContactUs.Html">Contact Us</a></li>
+                <li><a href="ContactUs.Html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
        </div>
@@ -32,7 +59,7 @@
     <!-- ===== MAIN CONTENT ===== -->
     <main class="container">
 
-        <section>
+        <section class="animate-on-scroll">
             <h2>Get in Touch</h2>
             <p>
                 We'd love to hear from you! Whether you have a question 
@@ -44,7 +71,7 @@
         <hr>
 
         <!-- Contact Details -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Contact Details</h3>
 
             <ul>
@@ -73,7 +100,7 @@
         <hr>
 
         <!-- Maps / Locations -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Our Location</h3>
             <p>
                 All orders are for <strong>pickup only</strong> at 
@@ -155,7 +182,7 @@
         <hr>
 
         <!-- Contact Form -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Send Us a Message</h3>
             <p>
                 For general enquiries (not orders), please use the 
@@ -223,6 +250,14 @@
         </p>
         </div>
     </footer>
+<!-- Leaflet JS (load before maps.js -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Your scripts -->
+<>src="js/main.js"defer</script>
+<>src="js/maps.js"defer</script>
+<>src="js/form.js"defer</script>
+<>src="js/products.js"defer</script>
 
 </body>
 </html>
