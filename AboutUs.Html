@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us – Ann's Bakery</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- ==== SEO META TAGS ==== -->
+    <title>About Us – Ann's Bakery | Our Story &amp; Mission</title>
+<meta name="description" content="Learn about Ann's Bakery - a home-based bakey in Spring founded on passion, formal training, amd locally sourced ingredients. Discover our story and mission">
+<meta name="keywords" content="about Ann's bakery, that is a home bakery story, a bakery located in Springs, by Ann who is baker">
+<link rel="canonical" href="https://www.annsbakery.co.za/abouthtml">
+
+<-- Open Graph -->
+<meta property="og:title" content="About Ann's Bakery | Our story &amp; Mission">
+<meta property="og:description" content="A home-based bakery inSprings founded on passion, formal training, and local ingredients">
+<meta property="og:url" content="https://www.annsbakery.co.za/about.html">
+<meta property="og:type" content="website">
+<meta name="Instagram:card" content="summary_large_image">
+
+<!-- Security -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referer" content="strict-origin-whn-cross-origin">
+
+      <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,7 +36,7 @@
         <nav>
             <ul>
                 <li><a href="Homepage.html">Home</a></li>
-                <li><a href="AboutUs.Html">About Us</a></li>
+                <li><a href="AboutUs.Html" aria-current="page">About Us</a></li>
                 <li><a href="Productspage.Html">Our Products</a></li>
                 <li><a href="Orderpage.Html">Place an Order</a></li>
                 <li><a href="ContactUs.Html">Contact Us</a></li>
@@ -33,7 +51,7 @@
     <main class="container">
 
         <!-- About Section -->
-        <section>
+        <section class="animate-on-scroll">
             <h2>About Ann's Bakery</h2>
 
             <h3>Our Story</h3>
@@ -87,8 +105,8 @@
 
         <hr>
 
-        <!-- What Makes Ann Special -->
-        <section>
+        <!-- What Makes Us diferent -->
+        <section class="animate-on-scroll">
             <h3>What Makes Ann's Bakery Different</h3>
          <div class="class-grid">
          
@@ -122,7 +140,7 @@
         <hr>
 
         <!-- Our Values -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Our Values</h3>
             <ul>
                 <li>
@@ -143,6 +161,55 @@
                 </li>
             </ul>
         </section>
+
+        <!-- FAQ Accordion -->
+        <section class="animate-on-scroll">
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="accordion">
+
+            <div class="Accordion-item">
+            <button class="accordion-headr" aria-expanded="false">
+                How long does it take to get my order
+                <span class="acccordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+            <p>Scones takes 24-48 Hours. Birthday cakes take 3-5days because Ann designs and bakes each one to perfection.</p>
+        </div>
+        </div>
+
+        <div class="accordio-item">
+        <button class="accordion-header" aria-expanded="false">
+          Do you deliver?
+            <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+             <p> Currently, al order are for pickup only st Ann's home: 6575 Majola street, New Payneville,Springs.</p>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+        What payment methods do you accept?
+        <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+        <p>Both card and cash are accepted. Payment is made when you collect your order</p>
+    </div>
+    </div>
+
+    <div class="accordion-item">
+    <button class="accordion-header" aria-expanded="false"
+    Can I request a custom cake design?
+    <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+    <p>Yes! Standard cakes include simple decoratio. Premium design ckaes include mutli-tier, themed, or character designs. Mention your idea in the order form</p>
+    </div>
+</div>
+
+    </div>
+</selection>
 
     </main>
 
@@ -169,6 +236,10 @@
         </p>
      </div>
     </footer>
+
+<script src="js/main.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/products.js" defer></script>
 
 </body>
 </html>
