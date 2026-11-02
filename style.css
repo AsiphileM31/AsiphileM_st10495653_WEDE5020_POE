@@ -42,32 +42,32 @@
 
   :root {
     /* color Palette-Warm and Cozy*/
-   --color-cream: # FDF5E6;
-   --color-warm-brown: # 8B6914;
-    --color-terracotta: # E07A5F;
-   --color-butter-yellow: # F4D03F;
-   --color-dark-chocolate: # 3E2723;
-   --color-warm-white: # FFF8F0;
-   --color-light-grey: # F0EAE0;
+   --color-cream: #FDF5E6; 
+   --color-warm-brown: #8B6914;
+    --color-terracotta: #E07A5F;
+   --color-butter-yellow: #F4D03F;
+   --color-dark-chocolate: #3E2723;
+   --color-warm-white: #FFF8F0;
+   --color-light-grey: #F0EAE0;
   
 
 
   /*Typography*/
-font-heading: Georgia,"Time New Roman", serif;
-font-body: Arial, Helvetica, sans-serif;
+--font-heading: Georgia,"Time New Roman", serif;
+--font-body: Arial, Helvetica, sans-serif;
 
 /*SpacingScale*/
-space-xs: 0.5 rem;
-space-sm: 1 rem;
-space-md: 1.5 rem;
-space-lg: 2.5 rem;
-space-xl: 4 rem;
+--space-xs: 0.5rem;
+--space-sm: 1rem;
+--space-md: 1.5rem;
+--space-lg: 2.5rem;
+--space-xl: 4rem;
  
 
   /*Layout*/
-max-width: 1200 px;
-border-radius: 8 px;
-transition: 0.3 s ease;
+--max-width: 1200px;
+--border-radius: 8px;
+--transition: 0.3s ease;
   } 
 
 
