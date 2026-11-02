@@ -42,18 +42,18 @@
 
   :root {
     /* color Palette-Warm and Cozy*/
-   color-cream: FDF5E6;
-   color-warm-brown: 8B6914;
-    color-terracotta: E07A5F;
-   color-butter-yellow: F4D03F;
-   color-dark-chocolate: 3E2723;
-   color-warm-white: FFF8F0;
-   color-light-grey: F0EAE0;
+   --color-cream: # FDF5E6;
+   --color-warm-brown: # 8B6914;
+    --color-terracotta: # E07A5F;
+   --color-butter-yellow: # F4D03F;
+   --color-dark-chocolate: # 3E2723;
+   --color-warm-white: # FFF8F0;
+   --color-light-grey: # F0EAE0;
   
 
 
   /*Typography*/
-font-heading: Georgia,Time New Roman, serif;
+font-heading: Georgia,"Time New Roman", serif;
 font-body: Arial, Helvetica, sans-serif;
 
 /*SpacingScale*/
@@ -80,8 +80,8 @@ transition: 0.3 s ease;
     font-famly: var (-font-body);
     font-size: 1 rem;
     line-height: 1.6;
-    color: var (-color-dark-chocolate);
-    background-color: var (-color-cream);
+    color: var (color-dark-chocolate);
+    background-color: var (color-cream);
     margin: 0;
     padding: 0;
   }
@@ -161,8 +161,8 @@ a:active {
 blockqoutes {
     background-color: var (color-warm-white);
     border-left: 5 px solid var (color-warm-white);
-    padding: var (space-sm)var (space-md);
-    margin:var (space-sm) 0;
+    padding: var (space-sm) var (space-md);
+    margin: var (space-sm) 0;
     border-radius: 0 var (-border-radius) var (border-radius) 0;
     font-style: italic;
 }
