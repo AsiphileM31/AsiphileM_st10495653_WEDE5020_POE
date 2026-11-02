@@ -14,7 +14,7 @@ const product =[
         price:15.00,
         description: 'Traditonal, light, and perfectly gloden. A customer favourite',
         turnaround:'24-48 Hours',
-        images:'butter-milk-medium.jpeg',
+        images:'images/butter-milk-medium.jpeg',
         alt:'Classic Buttermilt scones with golden crust'
     },
     {
@@ -24,7 +24,7 @@ const product =[
         price:18.00,
         description:'Bursting with juicy blueberries and a hint of lemon zest.',
         turnaround:'24 - 48 Hours',
-        image:'scone-blueberry-large.jpg',
+        image:'images/scone-blueberry-large.jpg',
         alt: 'Blueberry scones with juicy berries',
     },
     {
@@ -34,7 +34,7 @@ const product =[
         price:'20.00',
         description:'Ask Ann about her rotating seasonal flavours!',
         turnaround:'24 - 48 Hours',
-        image:'scone-seasonal-large.jpg',
+        image:'images/scone-seasonal-large.jpg',
         alt:'Seasonal scones featuring rotating flavours'
     },
     {
@@ -44,7 +44,7 @@ const product =[
         price:250.00,
         description:'Classic sponge with Buttercream frosting. Custom colours and simple decorations included.',
         turnaround:'3 - 5 Days',
-        image:'cake-standard-small.jpg',
+        image:'images/cake-standard-small.jpg',
         alt:'Standard birthday cake with Buttercream frosting',
     },
     {
@@ -54,7 +54,7 @@ const product =[
         price:400.00,
         description:'Multi-tier, themed designs, or character cakes. Perfect for ,milestone birhtday!',
         turnaround:' 3 - 5 Days',
-        image:'cake-premium-small.jpg',
+        image:'images/cake-premium-small.jpg',
         alt:'premium multi-tier birthday cake withthemed design, chocolate frosting',
     }
 ];
