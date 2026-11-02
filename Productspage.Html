@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- ==== SEO META TAGS ==== -->
     <title>Our Products - Ann's Bakery</title>
+<meta name="description" content=""Browse Ann's Bakery products:classic butter milk scones, blueberry scones, and custom birthday cakes. Prices, turnaround times, and flavour listed.">
+<meta name="keywords" content="buy scone Springs, birthday cake price Springs, custom cakes, buttermilk scones, blueberry scones">
+<link rel="canonical" href="https://wwww.annsbakery.co.za/product.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Our Products | Scones &amp; Birthday Cakes - Ann's Bakery">
+<meta property="og:description" content="Classic buttermilk scones,blueberry scones, and custom birthday cakes. Prices and turnaround time listed.">
+<meta property="og:image" content="https://www.annsbakery.co.za/images/scone-classic.jpg">
+<meta property="og:url" content="https://wwww.annsbakery.co.za/product.html">
+<meta property="og:type" content="website">
+<meta name="Instagram:card" content="summary_large_image">
+
+<!-- Security -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referer" content="strict-origin-when-cross-origin">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +29,7 @@
 
     <!-- ===== HEADER / NAVIGATION ===== -->
     <header>
-    <div class="container">
+    <div class="container header-inner">
         <h1>Ann's Bakery</h1>
         <p>Freshly Baked with Passion</p>
 
@@ -19,7 +37,7 @@
             <ul>
                 <li><a href="Homepage.html">Home</a></li>
                 <li><a href="AboutUs.Html">About Us</a></li>
-                <li><a href="Productspage.Html">Our Products</a></li>
+                <li><a href="Productspage.Html" aria-current="page">Our Products</a></li>
                 <li><a href="Orderpage.Html">Place an Order</a></li>
                 <li><a href="ContactUs.Html">Contact Us</a></li>
             </ul>
@@ -32,7 +50,7 @@
     <!-- ===== MAIN CONTENT ===== -->
     <main class="container">
 
-        <section>
+        <section class="animate-on-scroll">
             <h2>Our Baked Goods</h2>
             <p>
                 At Ann's Bakery, we specialise in two main products: 
@@ -43,32 +61,41 @@
         </section>
 
         <hr>
-
+         <!-- Tabs -->
         <!-- Scones Section -->
-        <section>
-            <h3>Scones</h3>
+        <section class="animate-on-scroll">
+        < div class="tabs" role="tablist">
+            <button class="tab-button active" role="tab" arial-selected="true" data-tab="tab-scone">Scones</button>
+            <button class="tab-button" role role="tab" aria-selected="false" data-tab="tab-cake">Birthday Cakes</button>
+        </div>
+                <!-- Tabs Scones -->
+            <div class="tab-panel active" id="tab-scones" role="tabpanel">
+             <h3>Scones</h3>
             <p>
                 Ann's scones are legendary in the local community. 
                 Light, buttery, and baked fresh daily - they are the 
                 perfect treat for any time of day.
             </p>
+
+                <!-- search and sort -->
+                <div class="product-controls">
+                 <label for="productSearch">Search products</label>
+                 <input type="search" id="productSearch" placeholder="Search by name or flavour...">
+                 <label for="productSort"> Sort by:</label>
+                <select id="productSort">
+                    <option value="name-asc">Name (A-Z)</option>
+                    <otpion value="name-desc">Name (Z-A)</option>
+                    <option value="price-asc">Price (Low to High)</option>
+                    <option value="proce-desc">Price (High to Low)</option>
+                </select>
+            </div>
              
             <h4>Scone Varieties</h4>
-             
-              <div class="layout-three-column mt-md">
+
+            <!-- Dynamic scone list -->
+              <div class="layout-three-column mt-md" id="sconeList">
                 <div class="product-item">
-                  <img
-                      src="butter-milk.jpg"   
-                       srcset="butter-milk-small.jpg 300w,  
-                              butter-milk-medium.jpg 600w,
-                              image-2-large.jpg 900w"
-                       sizes="(max-width: 480px) 90vw,
-                               (max-width: 768) 45vw,
-                                 30vw"
-                       alt="Classic buttermilk scones with a golden crust, freshly baked"
-                       class="product-image"
-                        loading="lazy"
-                   >
+                 
                     <h4>Classic Buttermilk Scones</h4>  
                    <p> Traditional, light, and perfectly golden. A customer favourite </p>
                    <p class="Price">R15.00 each</p>
@@ -76,18 +103,7 @@
                 </div>
 
                 <div class="product-item">
-                 <img
-                     src="images/scone-blueberry.jpg"
-                     srcset="scone-blueberry-small.jpg 300w,
-                             scone-blueberry-medium.jpg 600w,
-                             scone-blueberry-large.jpg 900w"
-                     sizes="(max-width: 480px) 90vw,
-                             (max-width: 768px) 45vw,
-                             30vw"
-                      alt="Blueberry scones bursting with juicy berries and hint of lemon"
-                      class="product-image"
-                      loading="lazy"
-                    >
+
                     <h4>Blueberry Scones</h4> – 
                    <p> Bursting with juicy blueberries and a hint of lemon. </p>
                    <p class="Price">R18.00 each</p>
@@ -95,18 +111,7 @@
                 </div>
 
                 <div class="product-item">
-                <img
-                    src="scone-seasonal.jpg"
-                    srcset="scone-seasonal-small.jpg 300w,
-                            scone-seasonal-medium.jpg 600w,
-                            scone-seasonal-large.jpg 900w"
-                     sizes="(max-width: 480px) 90vw,
-                            (max-width: 768px) 45pxvw,
-                        30vw"
-                     alt="Seasonal scones featuring rotating flavours"
-                     class="product-images"
-                     loading="lazy"
-                    >
+                
                     <h4>Seasonal Special</h4> - 
                    <p> Ask Ann about her rotating seasonal flavours! </p>
                     <p class="Price">Varies</p>
@@ -124,6 +129,7 @@
 
         <!-- Birthday Cakes Section -->
         <section>
+        <div class="tab-panel" id="tab-cakes" role="tabpanel">
             <h3>Birthday Cakes</h3>
             <p>
                 Ann creates beautiful, custom-designed birthday cakes 
@@ -135,18 +141,7 @@
 
             <div class="layout-two-column mt-md">
                 <div class="product-item">
-                   <img
-                       src="cake-standard.jpg"
-                       srcset="cake-standard-small.jpg 400w,
-                               cake-standard-medium.jpg 800w,
-                                cake-standard-large.jpg 1200w"
-                       sizes="(max-width: 480px) 90vw,
-                              (amx-width: 768px) 45vw,
-                             50vw"
-                          alt="Standard birthday cake with buttercream frosting and simple decorations"
-                          class="product-image"
-                          loading="lazy"
-                     >
+
                     <h4>Standard Birthday Cake</h4>  
                     <p>Classic sponge with buttercream frosting. 
                     Custom colours and simple decorations included. </p>
@@ -154,19 +149,7 @@
                     <p class="Turnaround"> Time: 3 - 5 days</p>
                 </div>
 
-                <div class="product-item">
-                   <img
-                       src="cake-premium-small.jpg"
-                        srcset="cake-premium-small.jpg 400w,
-                                cake-premium-medium.jpg 800w,
-                                 images-5-large.jpg 1200w"
-                       sizes="(max-width: 480px) 90vw,
-                              (max-width: 768px) 45vw,
-                             50vw"
-                        alt="Premium multi-tier birthday cake with themed design and elegant decorations"
-                        class="product-image"
-                         loading="lazy"
-                        >
+                <div>
                     <h4>Premium Design Cake</h4> 
                    <p> Multi-tier, themed designs, or character cakes. 
                     Perfect for milestone birthdays! </p>
@@ -184,7 +167,7 @@
                 <li>Lemon</li>
             </ul>
 
-            <p>
+            <p class="text-center mt-md">
                 (Custom cakes take time to design and bake to perfection.)
             </p>
 
@@ -196,7 +179,7 @@
         <hr>
 
         <!-- Important Notes -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Important Information for All Orders</h3>
             <ul>
                 <li>
@@ -221,7 +204,22 @@
             </ul>
         </section>
 
-    </main>
+    <!-- gallery (lightbox) -->
+    <section class="animate-on-scroll">
+        <h3>Gallery</h3>
+    <p>Click any image to view it larger.</p>
+     <div class="layout-three-column mt-md">
+       <img src=" butter-milk-medium.jpg" alt="Classic buttermilk scones" class="product-image gallery-item" loading="lazy">
+       <img src= " scone-blueberry-large.jpg" alt= "Blueberry scones" class="product-image gallery-item" loading="lazy">
+       <img src="scone-seasonal-large.jpg" alt= "Seasonal scones" class="product-image gallery-item" loading="lazy">
+       <img src="cake-standard-large" alt= "Standard birthday cake" class="product-image gallery-item" loading="lazy">
+      <img src="cake-premium-small.jpg" alt="Premium small birthday cake" class="product-image gallery-item" loading="lazy">
+      <img src="cake-premium-medium.jpg" alt= "Premium birthday cake" class="product-image gllery-item" loading="lazy">
+     <img src= "hero-scones.jpg" alt="Freshly baked scones" class="product-image gallery-item" loading="lazy">
+   </div>
+</selection>
+
+</main>
 
     <hr>
 
@@ -246,6 +244,11 @@
         </p> 
          </div>
     </footer>
+
+    <script src="js/main.js" defer></script>
+     <script src="js/forms.js" defer></script>
+     <script src="js/product.js" defer></script>
+
 
 </body>
 </html>
