@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ==== SEO META TAGS==== -->
     <title>Ann's Bakery - Freshly Baked Scones &amp; Birthday Cakes</title>
+    <meta name="description" conent="Ann's Bakery in New Payneville, Springs offers freshly baked scones andcustom birthday cakes. Locally sourced ingredients, quality you can taste. Order online today.">
+    <meta name="keywords" content="bakery Springs, scones Springs, birthday cakes Springs, home bakery New Payneville, custom cakes Gauteng">
+    <link rel="canonical" href="https://www.annsbakery.co.za/index.html">
+
+    <!-- Open Graph-->
+    <meta property="og:title" content="Ann's Bakery | fresh Scones &amp; Custom Birthday Cakes">
+    <meta property="og:description" content="Freshly baked scones and custom birthday cakes in Springs. Quality, passion, and local ingredients.">
+    <meta property="og:image" content="https://www.annsbakery.co.za/images/hero-scones.jpg">
+    <meta name="Instagram:card" content="summary_large_image">
+
+    <!-- Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referer" conetent="strict-origin-when-cross-origin">
+
+    <!-- Preloaded hero image for speed -->
+    <link rel="preloaded" as="image" href="hero-scones.jpg" imagesrcset="hero-scones-small.jpg 480w, hero-scones-meduim.jpg 800w, hero-scone-large.jpg 1200w">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (Local Business) -->
+    <script type="application/Id+json">
+        {
+        "@content":"https://schema.org",
+        "@type":"Barkery",
+        "name":"Ann's Bakery",
+        "image":"https://www.annsbakery.co.za/hero-scones.jpg",
+        "url":"https://www.annsbakery.co.za",
+        "telephone":"+27824539877",
+        "email":"info@annsbakery.co.za",
+        "address":{
+        "@type":"PostalAdress",
+        "streetAddress":"6575 Majola street",
+        "addressLocality":"New Payneville, Springs",
+        "AddressRegion":"Gauteng",
+        "postalCode":"1575",
+        "adressCountry":"ZA"
+        },
+        "openingHoursSpecification":[
+        {
+            "@type":"OpeningHoursSpecification",
+            "dayofWeek":"[Monday, Tuesday, Wednesday, Thursday, Friday]",
+            "opens":"8:00",
+            "closes":"17:00"
+        },
+        {
+            "@type":"OpeningHoursSpecification",
+            "dayofWeek":"Saturday",
+            "open":"8:00",
+            "closes":"14:00"
+        }
+    ],
+        "priceRange":"R15- R400"
+        }
+</script>
 </head>
 
 <body>
@@ -18,7 +74,7 @@
         <!-- Navigation Menu -->
         <nav>
             <ul>
-                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Homepage.html" aria-current="page">Home</a></li>
                 <li><a href="AboutUs.Html">About Us</a></li>
                 <li><a href="Productspage.Html">Our Products</a></li>
                 <li><a href="Orderpage.Html">Place an Order</a></li>
@@ -34,7 +90,7 @@
     <main class="cotainer">
 
         <!-- Hero Section -->
-        <section>
+        <section class="animate-on0scroll">
             <img
                 src="images/hero-scones.jpg"
                 srcset="images/hero-scones.small.jpg 480w
@@ -64,7 +120,7 @@
         <hr>
 
         <!-- Business Hours Section -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Our Business Hours</h3>
             <ul>
                 <li>Monday - Friday: 6:00 AM - 7:30 PM</li>
@@ -80,7 +136,7 @@
         <hr>
 
         <!-- Quick Links / Highlights -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>Why Customers Love Ann's Bakery</h3>
              <div class="card-grid">
                 <div class="card">
@@ -108,7 +164,7 @@
         <hr>
 
         <!-- Customer Testimonials -->
-        <section>
+        <section class="animate-on-scroll">
             <h3>What Our Customers Say</h3>
             <blockquote>
                 <p>
@@ -138,7 +194,7 @@
         <hr>
 
         <!-- Call to Action -->
-        <section class="text-center">
+        <section class="animate-on-scroll">
             <h3>Ready to Order?</h3>
             <p>
                 Whether you need fresh scones for the weekend or a custom 
@@ -176,5 +232,10 @@
         </div>
     </footer>
 
+    <!-- ==== JAVASCRIPT ==== -->
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+    <script src="js/products.js" defer></script>
+    
 </body>
 </html>
